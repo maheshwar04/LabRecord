@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#d").empty();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="d" style="height:500px;width:500px;border:3px solid green;
+background-color:orange;">
+        We are using div element in our example.
+        <p>A button is used for deletion.</p>
+        <p>The button calls out the remove() method to delete the element.</p>
+    </div>
+    <br>
+    <button>Delete the div element from the page.</button>
+</body>
+
+</html>

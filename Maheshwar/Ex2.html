@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+  th,td{
+    text-align: center;
+  }
+</style>
+<script>
+    $(document).ready(function(){
+       var row= $("table td");
+  for(var i=2;i<row.length;i+=3){
+    
+        if(i%2===0){
+            row[i].style.color="red";
+        }else{
+            row[i].style.color="blue";
+        }
+    }
+            
+})
+</script>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Reg</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maheshwar</td>
+                <td>2141014002</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td>Maheshwar</td>
+                <td>2141014002</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Maheshwar</td>
+                <td>2141014002</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Maheshwar</td>
+                <td>2141014002</td>
+                <td>77</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

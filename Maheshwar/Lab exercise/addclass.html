@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+$("h1, p").addClass("green");
+$("div").addClass("size");
+});
+});
+</script>
+<style>
+.size {
+font-size: xx-small;
+}
+.green {
+color: green;
+}
+</style>
+</head>
+<body>
+<h1>The is the first heading!</h1>
+<h2>The is the second heading!</h2>
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.</p>
+<div>This is a piece of vital information.</div><br>
+<button id ="b1">Push classes in elements</button>
+</body>
+</html>

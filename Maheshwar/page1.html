@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Name</p>
+    <div class="Name"></div>
+    <p>email</p>
+    <div class="email"></div>
+    <script>
+        const Name=localStorage.getItem("Name");
+        const email=localStorage.getItem("email");
+
+        document.getElements("Name").textContent=Name;
+        document.getElementsByClassName("email").textContent=email;
+    </script>
+</body>
+</html>

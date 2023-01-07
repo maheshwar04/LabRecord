@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    fieldset{
+        background-color: aqua;
+    }
+    h3{
+        text-decoration: underline;
+        font-weight: bold;
+        text-align: center;
+    }
+    div{
+        margin-left: 500px;
+        margin-right: 500px;
+        justify-content: center;
+        border: 2px solid blue;
+        background-color: darksalmon; 
+        padding-left: 50px;  
+    }
+    .submit{
+        width: 80%;
+        background-color: blanchedalmond;
+    }
+</style>
+<body>
+    <h3>Registration</h3>
+    <form action="page1.html"method="post">
+        <!-- <fieldset> -->
+            <div>
+            <p>
+            <label for="Name">Name
+                <input type="text">
+            </label>
+           </p>
+           <p>
+            <label for="email">Email
+                <input type="email" name="Email" id="">
+            </label>
+           </p>
+           <p>
+            <label for="mobile">Mobile
+                <input type="number" name="mobile" id="">
+            </label>
+           </p>
+           <p>
+            <label for="Gender">Gender
+                <label for="Male"><input type="radio" name="Gender" Value="Male" id="">Male</label>
+                <label for="Female"><input type="radio" name="Gender" Value="Female" id="">female</label>
+            </label>
+           </p>
+           <p>
+            <label for="Password">Password
+               <input type="password" name="password" id="">
+            </label>
+           </p>
+           <p>
+           <label for="submit">
+               <input class="submit" type="submit" value="submit">
+            </label>
+           </p> 
+        </div>
+        </fieldset>
+    </form>
+    <script>
+        const form=document.getElementsByClassName("form");
+        const Name=document.getElementsByClassName("Name");
+        const email=document.getElementsByClassName("email");
+        // const mobile=document.getElementById("mobile");
+        // const Gender=document.getElementById("Gender");
+        // const Password=document.getElementById("Password");
+       form.addEventListener("submit",function(e){
+         e.preventDefault();
+     
+        const NameValue=Name.value;
+        const emailValue=email.value;
+        localStorage.setItem("Name",NameValue)
+        localStorage.setItem("email",emailValue)
+        // const NameValue=Name.value;
+        // const NameValue=Name.value;
+        // const NameValue=Name.value;
+        // const NameValue=Name.value;
+        window.location.href="page1.html";
+    });
+    </script>
+</body>
+</html>

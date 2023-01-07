@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+		$("#1").fadeOut(1000);
+		// $("#2").fadeToggle(2000);
+		// $("#3").fadeIn(3000);
+        // $("#4").fadeTo(1000,0.5);
+});
+});
+</script>
+</head>
+<body>
+<p>Applying fadeIn effect on each box with different timing.</p>
+<button>Hit the button to get the fading effect.</button><br><br>
+<div id="1" style="width:40px;height:60px;background-color:brown;">
+</div><br>
+<div id="2" style="width:40px;height:60px;display:none;background-color:yellow;">
+</div><br>
+<div id="3" style="width:40px;height:60px;display:none;background-color:orange;">
+</div> 
+<!-- <div id="4" style="width:40px;height:60px;background-color:rgb(255, 0, 0);"> -->
+</div>
+</body>
+</html>

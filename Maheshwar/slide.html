@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#flip").click(function(){
+// $("#panel").slideDown("fast");
+// $("#panel").slideUp("fast");
+$("#panel").slideToggle("fast");
+});
+});
+</script>
+<style>
+#panel, #flip {
+    cursor: pointer;
+padding: 10px;
+text-align: left;
+background-color: dodgerblue;
+border: solid 5px purple;
+}
+#panel {
+padding: 60px;
+display: none;
+}
+</style>
+</head>
+<body>
+<div id="flip">When this area is clicked, a panel emerges.</div>
+<div id="panel">The panel greets the user with Merry Christmas!</div>
+</body>
+</html>

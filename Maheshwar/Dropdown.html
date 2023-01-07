@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.Droplnk {
+		background-color: rgb(14, 218, 116);
+		color: rgb(5, 1, 1);
+		padding: 6px;
+		font-size: 20px;
+		border:2px solid rgb(255, 0, 21);
+}
+.dropdown {
+        float:left;
+		position: relative;
+		/* display: inline-block; */
+}
+.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: gray;
+		min-width: 100%;
+		 box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.9);
+}
+.dropdown-content a {
+		color: black;
+		 padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+}
+.dropdown-content a:hover {
+		background-color: brown
+}
+.dropdown:hover .dropdown-content {
+		display: block;
+}
+.dropdown:hover .dropbtn {
+		background-color: orange;
+}
+a{
+    text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+<h2>Hoverable Dropdown</h2>
+<p>To check the drowndown menu </p>
+<div class="dropdown">
+<a class="Droplnk"href="#">Home</a>
+<div class="dropdown-content">
+<a href="#">a</a>
+<a href="#">b</a>
+<a href="#">c</a>
+</div>
+</div>
+<div class="dropdown">
+    <a class="Droplnk"href="#">About me</a>
+    <div class="dropdown-content">
+    <a href="#">e</a>
+    <a href="#">f</a>
+    <a href="#">g</a>
+    </div>
+</div>
+    <div class="dropdown">
+        <a class="Droplnk"href="#">Contact me</a>
+        <div class="dropdown-content">
+        <a href="#">i</a>
+        <a href="#">j</a>
+        <a href="#">k</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#toggle").click(function(){
+		$("div").animate({left: '700px'});
+        $("div").animate({
+        fontSize:'18em',
+        left: '0px',
+		right:'500px',
+        opacity: '0.4',       
+        height: '300px',        
+        width: '1366px',
+        },13600);
+      for(var i=0;i<100;i++){
+        $("div").animate({
+            width:'toggle',
+        })
+        $("#stop").click(function(){
+		$("div").stop();
+});
+
+      }
+});
+// $("#stop").click(function(){
+// 		$("div").stop();
+// });
+});
+</script>
+</head>
+<body>
+<button id="toggle">Toggle the animation</button>
+<p></p>
+<div style="background:dodgerblue;height:50px;width:50px;position:absolute;">Maheshwar</div>
+<button id="stop">stop the Animation</button>
+</body>
+</html>

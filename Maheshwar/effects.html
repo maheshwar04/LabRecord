@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#a").click(function(){ //This captures the click event on element with id “a”
+		 $("p").hide(); //This hides all the elements p
+});
+$("#b").click(function(){//This captures the click event on element with id “b”
+		 $("p").show(); //This shows all the elements p
+});
+});
+</script>
+</head>
+<body>
+<p>If the Disappear button is clicked, then the paragraph would disappear.</p>
+<p>If the Appear button is clicked, then the paragraph would appear again.</p>
+<button id="a">Disappear</button>
+<button id="b">Appear</button>
+</body>
+</html>

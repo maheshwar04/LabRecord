@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+		 $("p").prepend("<b>New Content</b>. ");
+});
+$("#b2").click(function(){
+		$("ol").prepend("<li>Nuggets</li>");
+});
+});
+</script>
+</head>
+<body>
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.</p>
+<ol>
+<li>Pizza</li>
+<li>Burger</li>
+<li>Sandwich</li>
+</ol>
+<button id="b1">Prepend content at the end of paragraph.</button>
+<button id="b2">Prepend item at the end of the list.</button>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+		$("h1").hide(3000, function(){
+		
+alert("The heading has disappeared.");
+		});
+});
+});
+</script>
+</head>
+<body>
+<button>Make the heading disappear!</button>
+<h1>Callback Function</h1>
+</body></html>
